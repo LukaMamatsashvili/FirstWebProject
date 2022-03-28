@@ -1,0 +1,382 @@
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+header, footer
+{
+    display: inline-block;
+    width: 100%;
+}
+header
+{
+    position: fixed;
+    top: -0.5%;
+    left: 20%;
+    width: 60%;
+    height: 15em;
+    background-color: white;
+    height: 4.5em;
+    font-size: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 5px 10px black;
+    z-index:1;
+}
+.logo
+{
+    border-radius: 50%;
+    width: 4em;
+    margin-top: 0.3em;
+    left: -1%;
+    box-shadow: 0px 8px 15px black;
+}
+header ul
+{
+    margin-top: 0.2em;
+    margin-left: -13em;
+    display: flex;
+    justify-content: space-around;
+}
+header ul li
+{
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 1.2em;
+    transition: all 0.1s;
+}
+header a:hover
+{
+    font-size:1.1em;
+}
+header a:active
+{
+    font-size:0.9em;
+}
+header a, .dropdown-content a:visited
+{
+    color: black;
+    text-decoration-color: white;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    width: 11em;
+    padding: 1em 1em;
+    border-radius: 20px;
+    line-height: 2em;
+    background-color: white;
+    box-shadow: 0px 0px 50px black;
+    margin-left:-3em;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+
+main 
+{
+    width: 100%;
+}
+.mainphoto1
+{
+    width: 110%;
+    margin-top: -3em;
+    margin-left: -2em;
+    filter: saturate(80%);
+    z-index: -1;
+}
+main h1
+{
+    text-align: center;
+    font-size: 4em;
+}
+main p
+{
+    font-size: 1.2em;
+    text-align: left;
+    padding: 0em 2em;
+    text-indent: 3em;
+    line-height: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+}
+.mainphoto2
+{
+    position: absolute;
+    top:33%;
+    left: 15.7%;
+    z-index:-1;
+    opacity:60%;
+}
+
+
+
+footer
+{ 
+    margin-top: 3em;
+    margin-bottom: -1em;
+    position: relative;
+    background-color: #033136;
+    box-shadow: 0px 10px 30px black;
+    height: 11em;
+    width: 130%;
+    left: -20%;
+    text-align: center;
+    clear: both;
+}
+.up
+{
+    position: fixed;
+    right:95%;
+    top: 90%;
+    opacity: 30%;
+}
+.arrow
+{
+    border: 2px solid black;
+    padding: 0.5em;
+    border-radius:50%;
+    width:2em;
+}
+.up:hover
+{
+    opacity: 100%;
+}
+.contacts
+{   
+    position: relative;
+    color:white;
+    width: 25%;
+    margin-top: 1em;
+    margin-left: 50em;
+    text-align: left;
+}
+.contacts h1
+{
+    font-size: 2em;
+    margin-left:5em;
+}
+#p3
+{
+    line-height: 0.5em;
+    display:flex;
+}
+#p3 p
+{
+    font-family: 'Mukta', sans-serif;
+}
+#p3 .right
+{
+    margin-left: 2em;
+}
+.socials
+{
+    width: 8%;
+    margin-top: -5em;
+    margin-left: 113em;
+}
+.socials>*
+{
+    padding-right: 5px;
+}
+footer a>*
+{
+    position: relative;
+    width: 2em;
+}
+footer a>*:active
+{
+    width: 1.8em;
+}
+
+
+@media(max-width: 1024px) {
+    header
+    {
+        left:22%;
+        width:40%;
+    }
+    header ul
+    {
+        margin-left:-8em;
+    }
+    header ul li 
+    {
+        font-size:0.8em;
+        margin-top:2em;
+        margin-left: -3em;
+        margin-right: -1.5em;
+    }
+    .logo
+    {
+        width:3.5em;
+        margin-left:-2em;
+    }
+
+
+    .mainphoto1
+    {
+        margin-top:-2em;
+        margin-left:-3em;
+    }
+    main h1
+    {
+        font-size:3em;
+    }
+    .mainphoto2
+    {
+        width:100em;
+        top:35%;
+        left: -25%;
+    }
+    
+
+
+    .contacts
+    {
+        margin-left:18em;
+        width:40%;
+    }
+    .contacts h1
+    {
+        font-size:1.8em;
+        width:5em;
+        margin-left:6em;
+    }
+    #p3 p
+    {
+        font-size: 0.9em;
+    }
+    .socials
+    {
+        width:13%;
+        margin-left: 62em;
+        margin-top:-3em;
+    }
+}
+@media(max-width: 768px) 
+{
+    header
+    {
+        left:17%;
+        width:50%;
+        height:4em;
+    }
+    header ul
+    {
+        height: 4em;
+    }
+    header ul li 
+    {
+        margin-top:1.7em;
+    }
+    
+
+    main h1
+    {
+        font-size:2.5em;
+    }
+    .mainphoto2
+    {
+        width:70em;
+        top:70%;
+    }
+
+
+    .up
+    {
+        right:93%;
+        top: 90%;
+    }
+    .contacts h1
+    {
+        font-size:1.5em;
+        margin-top: 1em;
+    }
+    #p3 p
+    {
+        font-size: 0.75em;
+    }
+    .socials
+    {
+        width:20%;
+        margin-left: 44em;
+    }
+}
+@media(max-width: 450px)
+{
+    header
+    {
+        width:55%;
+    }
+    header ul li 
+    {
+        font-size: 0.7em;
+    }
+    .logo
+    {
+        margin-left:-1em;
+    }
+
+
+    .mainphoto1
+    {
+        width:150%;
+        margin-top:-2em;
+        margin-left:-3em;
+    }
+    main h1
+    {
+        font-size:2.5em;
+        margin-left:2.5em;
+    }
+    .card
+    {
+        width:120%;
+        margin-left:1em;
+    }
+    .card p 
+    {
+        padding: 0em 0em;
+    }
+    .mainphoto2
+    {
+        width:50em;
+        top:110%;
+        margin-left:0.5em;
+    }
+
+
+    footer
+    {
+        width:170%;
+    }
+    .up
+    {
+        right:92%;
+        top: 93%;
+    }
+    .contacts
+    {
+        margin-left: 10em;
+        margin-top: 3em;
+    }
+    .contacts h1
+    {
+        font-size:1em;
+    }
+    #p3 p
+    {
+        font-size: 0.65em;
+    }
+    .socials
+    {
+        width:25%;
+        margin-left: 30em;
+        margin-top:-3em;
+    }
+}
